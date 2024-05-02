@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        #navBar ul li {
+            display: inline-block;
+            padding: 23px;
+        }
+
+        .ser ul li {
+            display: inline-block;
+            padding-right: 30px;
+            color: rgb(6, 6, 48);
+        }
+
+        .box1 {
+            margin-left: 750px;
+            height: 340px;
+            width: 340px;
+            border-radius: 200px;
+            background-color: rgb(242, 191, 249);
+            margin-top: -560px;
+        }
+
+        .box {
+            margin-left: 750px;
+            height: 400px;
+            width: 340px;
+            background-color: rgb(242, 191, 249);
+            margin-top: -250px;
+        }
+
+        #facilities {
+            margin-top: 135px;
+            display: flex;
+            background-color: rgb(239, 243, 255);
+            width: 1510px;
+            height: 350px;
+        }
+
+        #facilities p {
+            color: grey;
+        }
+
+        #facilities h2 {
+            color: rgb(15, 15, 82);
+        }
+
+        .heading button {
+            margin-left: 1250px;
+            background-color: rgb(242, 190, 250);
+            border-radius: 20px;
+            padding: 12px 20px 12px 20px;
+            font-size: 15px;
+            border: none;
+            color: rgb(15, 15, 82);
+            position: relative;
+            top: -110px;
+            font-weight: bold;
+        }
+
+        #cleaning {
+            display: inline-flex;
+            margin-left: 240px;
+
+        }
+
+        #cleaning p {
+            color: grey;
+            line-height: 12px;
+            font-size: 18px;
+        }
+
+        #cleaning h2 {
+            color: rgb(15, 15, 82);
+        }
+
+        #container {
+            background-color: rgb(239, 243, 255);
+            height: 800px;
+            margin-top: 50px;
+        }
+
+        .rectangle {
+            position: relative;
+            height: 500px;
+            width: 370px;
+            top: 300px;
+            margin-left: 240px;
+            background-color: rgb(131, 99, 158);
+        }
+
+        .circle {
+            height: 250px;
+            width: 250px;
+            margin-top: -280px;
+            border-radius: 230px;
+            margin-left: 420px;
+            background-color: rgb(242, 191, 249);
+        }
+
+        .h-primary h2 {
+            margin-left: 870px;
+            color: rgb(15, 15, 82);
+            font-size: 45px;
+            line-height: 22px;
+        }
+
+        .h-primary p {
+            margin-left: 870px;
+            color: grey;
+            font-size: 18px;
+        }
+
+        .h-primary ul li {
+            margin-left: 820px;
+            color: rgb(15, 15, 82);
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .basic {
+            height: 570px;
+            width: 330px;
+            background-color: rgb(245, 242, 247);
+            border-radius: 15px;
+            margin-left: 240px;
+        }
+
+        .pro {
+            height: 570px;
+            width: 330px;
+            background-color: rgb(239, 243, 255);
+            border-radius: 15px;
+            margin-left: 40px;
+        }
+
+        .deluxe {
+            height: 570px;
+            width: 330px;
+            background-color: rgb(245, 242, 247);
+            border-radius: 15px;
+            margin-left: 40px;
+        }
+
+        #clean h4 {
+            margin-left: 30px;
+            color: rgb(131, 99, 158);
+            font-size: 17px;
+        }
+
+        #clean p {
+            margin-left: 50px;
+            color: grey;
+            line-height: 10px;
+            font-size: 17px;
+            position: relative;
+            top: 20px;
+        }
+
+        #clean p1 {
+            margin-left: 50px;
+            color: grey;
+            line-height: 10px;
+            font-size: 35px;
+            color: rgb(15, 15, 82);
+            font-weight: bold;
+        }
+
+        #clean p2 {
+            margin-left: 5px;
+            color: grey;
+            line-height: 10px;
+            font-size: 17px;
+            position: relative;
+            top: -5px;
+        }
+
+        .basic hr {
+            width: 270px;
+            position: relative;
+            top: 30px;
+        }
+
+        #clean ul li {
+            color: grey;
+            line-height: 35px;
+            font-size: 18px;
+            position: relative;
+            top: 25px;
+        }
+
+        #clean button {
+            position: relative;
+            top: 40px;
+            margin-left: 50px;
+            border-radius: 20px;
+            width: 240px;
+            height: 45px;
+            background-color: rgb(242, 191, 249);
+            color: rgb(15, 15, 82);
+            font-weight: bold;
+            border: none;
+        }
+
+        #teams {
+            background-color: rgb(239, 243, 255);
+            height: 720px;
+            position: relative;
+            top: 40px;
+        }
+
+        .james {
+            /* border: 2px solid red; */
+            height: 370px;
+            width: 250px;
+            margin-left: 240px;
+            border-radius: 15px;
+            background-color:white;
+        }
+
+        .sarah {
+            /* border: 2px solid red; */
+            height: 370px;
+            width: 250px;
+            margin-left: 30px;
+            border-radius: 15px;
+            background-color: white;
+        }
+
+        .david {
+            /* border: 2px solid red; */
+            height: 370px;
+            width: 250px;
+            margin-left: 30px;
+            border-radius: 15px;
+            background-color: white;
+        }
+
+        .lee {
+            /* border: 2px solid red; */
+            height: 370px;
+            width: 250px;
+            margin-left: 30px;
+            border-radius: 15px;
+            background-color: white;
+        }
+
+        .smith {
+            border: 2px solid lightgray;
+            height: 270px;
+            width: 340px;
+            margin-left: 200px;
+            border-radius: 15px;
+        }
+
+        .rachel {
+            border: 2px solid lightgray;
+            height: 270px;
+            width: 340px;
+            margin-left: 40px;
+            border-radius: 15px;
+        }
+
+        .chen {
+            border: 2px solid lightgray;
+            height: 270px;
+            width: 340px;
+            margin-left: 40px;
+            border-radius: 15px;
+        }
+
+        #star p {
+            margin-left: 40px;
+            position: relative;
+            top: 10px;
+            color: grey;
+            line-height: 10px;
+        }
+
+        #star hr {
+            width: 338px;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="nav">
+        <div id="navbar">
+            <div class="navigation" style="width: 700px;">
+                <h2 style="margin-left: 220px;font-size: 40px;color: rgb(15, 15, 82);"><img src="img/stars3.png" alt=""
+                        style="position: relative; top: 20px;">Beresin</h2>
+            </div>
+            <nav id="navBar" style="width: 1500px;">
+                <ul type="none"
+                    style="margin-left: 750px;margin-top: -80px;color: rgb(6, 6, 48);font-size: 15px;font-weight: bold;">
+                    <li>Home</li>
+                    <li>About Us</li>
+                    <li>Services</li>
+                    <li>Page</li>
+                    <li>Contact Us</li>
+                    <button
+                        style="font-size: 15px;background-color: rgb(242, 190, 250);border-radius: 25px;padding: 15px 15px 15px 15px;font-weight: bold;border: none;margin-left: 18px;width: 130px;">Get
+                        Started</button>
+                </ul>
+            </nav>
+        </div>
+    </section>
+
+
+    <section id="next">
+        <div id="ser1">
+            <div class="ser">
+                <h4 style="margin-left: 230px;margin-top: 110px;color: 	rgb(131,99,158);"><img src="img/star.png" alt=""
+                        style="position: relative; top: 15px;">BERESIN - CLEANING SERVICES
+                </h4>
+                <h1 style="margin-left: 240px;font-size: 55px;color: rgb(15, 15, 82);line-height: 12px;">Cleaning
+                    Services
+                </h1>
+                <h1 style="margin-left: 240px;font-size: 55px;line-height: 40px;color: rgb(15, 15, 82);">For All Your
+                    Needs</h1>
+                <p style="margin-left: 240px;color: grey;">Faucibus commodo a aenean et sit quisque ipsum. Consequat</p>
+                <p style="margin-left: 240px;color: grey;line-height: 12px;">eu id ut dolor felis quis. Sagittis a
+                    sapien pulvinar etiam</p>
+                <p style="margin-left: 240px;color: grey;">senectus adipiscing tempor diam tellus.</p>
+                <ul type="none" style="margin-left: 200px;line-height: 24px;color: rgb(6, 6, 48);">
+                    <button
+                        style="background-color: rgb(242, 190, 250);border-radius: 25px;font-size: 15px;padding:15px 10px 15px 10px;width: 123px;border: none;font-weight: bold;">Get
+                        started</button>
+                    <li style="margin-left: 15px;font-weight: bold;">How it works?</li>
+                </ul>
+            </div>
+            <div class="box"><img src="img/star2.png" alt="" style="position: relative; top: -55px;margin-left: 200px;">
+            </div>
+            <div class="box1">
+            </div>
+            <div style="margin-left: 1200px;margin-top: -300px;">
+                <p style="font-size: 45px;line-height: 20px;font-weight: bold;color:rgb(15, 15, 82) ;">10K+</p>
+                <h3 style="margin-top: -20px;color:rgb(131,99,158);">Homes Cleaned</h3>
+            </div>
+            <div style="margin-left: 1200px;margin-top: 70px;">
+                <p style="font-size: 45px;line-height: 20px;font-weight: bold;color:rgb(15, 15, 82) ;">126K+</p>
+                <h3 style="margin-top: -20px;color:	rgb(131,99,158);">Professional Tools</h3>
+            </div>
+            <div style="margin-left: 1200px;margin-top: 70px;">
+                <p style="font-size: 45px;line-height: 20px;font-weight: bold;color:rgb(15, 15, 82) ;">99%</p>
+                <h3 style="margin-top: -20px;color:	rgb(131,99,158) ;">Professional Tools</h3>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="benefits">
+        <div id="facilities">
+            <div class="flexible" style="padding-right: 120px;margin-left: 240px;margin-top: 50px;">
+                <img src="img/logo.png" alt="">
+                <h2>Flexible Scheduling</h2>
+                <p>Ut quis euismod at vivamus nunc duis.</p>
+                <p>Tempus leo id phasellus at tellus non orci</p>
+                <p>consectetur.Viverra urna accumsan</p>
+            </div>
+            <div class="staff" style="padding-right: 120px;margin-top: 50px;">
+                <img src="img/logo.png" alt="">
+                <h2>Professional Staff</h2>
+                <p>Ut quis euismod at vivamus nunc duis. </p>
+                <p>Tempus leo id phasellus at tellus non orci</p>
+                <p>consectetur.Viverra urna accumsan</p>
+            </div>
+            <div class="pricing" style="margin-top: 50px;">
+                <img src="img/logo.png" alt="">
+                <h2>Competitive Pricing</h2>
+                <p>Ut quis euismod at vivamus nunc duis. </p>
+                <p>Tempus leo id phasellus at tellus non orci</p>
+                <p>consectetur.Viverra urna accumsan</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="ourservices" style="width: 1500px;">
+        <div id="services">
+            <div class="heading">
+                <h4 style="margin-left: 230px;margin-top: 10px;color:rgb(131,99,158);"><img src="img/star.png" alt=""
+                        style="position: relative; top: 15px;">OUR SERVICES</h4>
+                <h2 style="margin-left: 240px;font-size: 45px;color: rgb(15, 15, 82);line-height: 20px;">Services We
+                    Provide</h2>
+                <p style="margin-left: 240px;color: grey;font-size: 20px;">Faucibus commodo a aenean et sit quisque
+                    ipsum. Consequat</p>
+                <p style="margin-left: 240px;color: grey;line-height: 10px;font-size: 20px;">eu id ut dolor felis quis.
+                    Sagittis a
+                    sapien pulvinar etiam</p>
+                <button>All Services</button>
+            </div>
+        </div>
+        <div id="cleaning">
+            <div class="office" style="padding-right: 110px;">
+                <img src="img/logo1.png">
+                <h2 style="line-height: 50px;">Office Cleaning</h2>
+                <p>Ut quis euismod at vivamus</p>
+                <p>nunc duis. Tempus leo id </p>
+                <p>phasellus at tellus non orci</p>
+                <p>consectetur.Viverra urna</p>
+                <p style="line-height: 45px; color: orange;font-weight: bold;">Learn More</p>
+            </div>
+            <div class="house" style="padding-right: 110px;">
+                <img src="img/logo1.png" alt="">
+                <h2 style="line-height: 50px;">House Cleaning</h2>
+                <p>Ut quis euismod at vivamus</p>
+                <p>nunc duis. Tempus leo id </p>
+                <p>phasellus at tellus non orci</p>
+                <p>consectetur.Viverra urna</p>
+                <p style="line-height: 45px; color: orange;font-weight: bold;">Learn More</p>
+            </div>
+            <div class="carpet" style="padding-right: 110px;">
+                <img src="img/logo1.png" alt="">
+                <h2 style="line-height: 50px;">Carpet Cleaning</h2>
+                <p>Ut quis euismod at vivamus</p>
+                <p>nunc duis. Tempus leo id </p>
+                <p>phasellus at tellus non orci</p>
+                <p>consectetur.Viverra urna</p>
+                <p style="line-height: 45px; color: orange;font-weight: bold;">Learn More</p>
+            </div>
+            <div class="kitchen" style="padding-right: 110px;">
+                <img src="img/logo1.png" alt="">
+                <h2 style="line-height: 50px;">Kitchen Cleaning</h2>
+                <p>Ut quis euismod at vivamus</p>
+                <p>nunc duis. Tempus leo id </p>
+                <p>phasellus at tellus non orci</p>
+                <p>consectetur.Viverra urna</p>
+                <p style="line-height: 45px; color: orange;font-weight: bold;">Learn More</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="choose">
+        <div id="container">
+            <div class="rectangle">
+            </div>
+            <div class="circle"></div>
+            <div id="why">
+                <div class="h-primary">
+                    <h4 style="color: rgb(131, 99, 158);margin-left: 860px;margin-top: -410px;"><img src="img/star1.png"
+                            alt="" style="position: relative; top: 15px;">WHY CHOOSE US?</h4>
+                    <h2>Providing Friendly, Reliable</h2>
+                    <h2>Cleaning Services</h2>
+                    <p style="line-height: 30px;">Serving 4000+ properties every month</p>
+                    <ul type="none">
+                        <li><img src="img/bullet.png" alt="" style="position: relative; top: 15px;">High-Quality
+                            Cleaning Services</li>
+                        <p>Sem dictum at viverra nibh adio egestas nunc augue sed.Etiam purus
+                        </p>
+                        <p style="line-height: 7px;">et molestie scelerisque. Vel tempus at.</p><br>
+                        <li><img src="img/bullet.png" alt="" style="position: relative; top: 15px;">Trained and
+                            Professional Staff</li>
+                        <p>Sem dictum at viverra nibh adio egestas nunc augue sed.Etiam purus</p>
+                        <p style="line-height: 7px;">et molestie scelerisque. Vel tempus at.</p><br>
+                        <li><img src="img/bullet.png" alt="" style="position: relative; top: 15px;">Exceptional Customer
+                            Service</li>
+                        <p>Sem dictum at viverra nibh adio egestas nunc augue sed.Etiam purus</p>
+                        <p style="line-height: 7px;">et molestie scelerisque. Vel tempus at.</p>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="price">
+        <div id="pricing">
+            <div class="table">
+                <h4 align="center" style="margin-top: 60px;color: rgb(131, 99, 158);"><img src="img/star.png" alt=""
+                        style="position: relative; top: 15px;">PRICING TABLE</h4>
+                <h1 align="center" style="font-size: 40px;color: rgb(15, 15, 82);line-height: 22px;">Pricing Plans for
+                    Every Budget</h1>
+                <p align="center" style="color: grey;font-size: 18px;">Faucibus commodo a aenean et sit quisque ipsum.
+                    Consequat</p>
+                <p align="center" style="color: grey;line-height: 8px;font-size: 18px;">eu id ut dolor felis quis.
+                    Sagittis a
+                    sapien pulvinar etiam.</p>
+            </div>
+            <div id="clean" style="display: inline-flex;margin-top: 50px;">
+                <div class="basic">
+                    <h4><img src="img/grey.png" alt="" style="position: relative; top: 8px;">BASIC CLEANING</h4><br>
+                    <p1>$350</p1>
+                    <p2>/service</p2>
+                    <p>Faucibus commodo a aenean et sit</p>
+                    <p>quisque ipsum. Consequat eu id ut</p>
+                    <p>dolor felis quis</p>
+                    <hr>
+                    <ul type="none">
+                        <li><img src="img/arrow.png" alt="" style="position: relative; top: 10px;">60 Minutes
+                            Consultation</li>
+                        <li><img src="img/arrow.png" alt="" style="position: relative; top: 15px;">2 Bedroom Cleaning
+                        </li>
+                        <li><img src="img/arrow.png" alt="" style="position: relative; top: 15px;">3 Bathroom Cleaning
+                        </li>
+                        <li><img src="img/arrow.png" alt="" style="position: relative; top: 15px;">1 Living Room
+                            Cleaning</li>
+                        <li><img src="img/arrow.png" alt="" style="position: relative; top: 15px;">7 Days Guarantee</li>
+                    </ul>
+                    <button>Get Started</button>
+                </div>
+                <div class="pro">
+                    <h4 style="margin-top: 10px;"><img src="img/star1.png" alt=""
+                            style="position: relative; top: 15px;">PRO CLEANING</h4><br>
+                    <p1>$650</p1>
+                    <p2>/service</p2>
+                    <p>Faucibus commodo a aenean et sit</p>
+                    <p>quisque ipsum. Consequat eu id ut</p>
+                    <p>dolor felis quis</p>
+                    <hr style=" width: 270px;position: relative;top: 26px;">
+                    <ul type="none">
+                        <li><img src="img/bluearrow.png" alt="" style="position: relative; top: 15px;">90 Minutes
+                            Consultation</li>
+                        <li><img src="img/bluearrow.png" alt="" style="position: relative; top: 15px;">3 Bedroom
+                            Cleaning</li>
+                        <li><img src="img/bluearrow.png" alt="" style="position: relative; top: 15px;">4 Bathroom
+                            Cleaning</li>
+                        <li><img src="img/bluearrow.png" alt="" style="position: relative; top: 15px;">1 Living Room
+                            Cleaning</li>
+                        <li><img src="img/bluearrow.png" alt="" style="position: relative; top: 15px;">7 Days Guarantee
+                        </li>
+                    </ul>
+                    <button style="background-color: rgb(15, 15, 82);color: white;">Get Started</button>
+                </div>
+                <div class="deluxe">
+                    <h4><img src="img/grey.png" alt="" style="position: relative; top: 8px;">DELUXE CLEANING</h4><br>
+                    <p1>$950</p1>
+                    <p2>/service</p2>
+                    <p>Faucibus commodo a aenean et sit</p>
+                    <p>quisque ipsum. Consequat eu id ut</p>
+                    <p>dolor felis quis</p>
+                    <hr style=" width: 270px;position: relative;top: 26px;">
+                    <ul type="none">
+                        <li><img src="img/arrow.png" alt="" style="position: relative; top: 15px;">120 Minutes
+                            Consultation</li>
+                        <li><img src="img/arrow.png" alt="" style="position: relative; top: 15px;">4 Bedroom Cleaning
+                        </li>
+                        <li><img src="img/arrow.png" alt="" style="position: relative; top: 15px;">5 Bathroom Cleaning
+                        </li>
+                        <li><img src="img/arrow.png" alt="" style="position: relative; top: 15px;">1 Living Room
+                            Cleaning</li>
+                        <li><img src="img/arrow.png" alt="" style="position: relative; top: 15px;">7 Days Guarantee</li>
+                    </ul>
+                    <button>Get Started</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="team">
+        <div id="teams">
+            <div class="head1">
+                <h4 align="center" style="margin-top: 60px;color: rgb(131, 99, 158);padding-top: 55px;"><img
+                        src="img/star1.png" alt="" style="position: relative; top: 15px;">OUR TEAM</h4>
+                <h1 align="center" style="font-size: 40px;color: rgb(15, 15, 82);line-height: 22px;">Meet Our Cleaning
+                    Team</h1>
+            </div>
+            <div id="members" style="display: inline-flex;position: relative;top: 50px;">
+                <div class="james">
+                    <img src="img/purple.png" style="width: 249px;height: 230px;border-radius: 13px;">
+                    <p style="margin-left: 27px;font-size: 20px;font-weight: bold;color: rgb(15, 15, 82);">James Wong</p>
+                    <p style="margin-left: 27px;font-size: 17px;color: grey;position: relative;top: -14px;">Cleaning Supervisor</p>
+                    <hr style="margin-top: -10px;color: lightgray;">
+                    <p style="margin-left: 27px;color: rgb(152, 36, 94);font-size: 12px;font-weight: bold;margin-top: 15px;">+FOLLOW ON TWITTER</p>
+                </div>
+                <div class="sarah">
+                    <img src="img/purple.png" style="width: 249px;height: 230px;border-radius: 13px;">
+                    <p style="margin-left: 27px;font-size: 20px;font-weight: bold;color: rgb(15, 15, 82);">Sarah Johnson</p>
+                    <p style="margin-left: 27px;font-size: 17px;color: grey;position: relative;top: -14px;">Operations Manager</p>
+                    <hr style="margin-top: -10px;color: lightgray;">
+                    <p style="margin-left: 27px;color: rgb(152, 36, 94);font-size: 12px;font-weight: bold;margin-top: 15px;">+FOLLOW ON TWITTER</p>
+                </div>
+                <div class="david">
+                    <img src="img/purple.png" style="width: 249px;height: 230px;border-radius: 13px;">
+                    <p style="margin-left: 27px;font-size: 20px;font-weight: bold;color: rgb(15, 15, 82);">David Nguyen</p>
+                    <p style="margin-left: 27px;font-size: 17px;color: grey;position: relative;top: -14px;">Cleaning Technician</p>
+                    <hr style="margin-top: -10px;color: lightgray;">
+                    <p style="margin-left: 27px;color: rgb(152, 36, 94);font-size: 12px;font-weight: bold;margin-top: 15px;">+FOLLOW ON TWITTER</p>
+                </div>
+                <div class="lee">
+                    <img src="img/purple.png" style="width: 249px;height: 230px;border-radius: 13px;">
+                    <p style="margin-left: 27px;font-size: 20px;font-weight: bold;color: rgb(15, 15, 82);">Samantha Lee/p>
+                    <p style="margin-left: 27px;font-size: 17px;color: grey;position: relative;top: -14px;">Cleaning Coordinator</p>
+                    <hr style="margin-top: -10px;color: lightgray;">
+                    <p style="margin-left: 27px;color: rgb(152, 36, 94);font-size: 12px;font-weight: bold;margin-top: 15px;">+FOLLOW ON TWITTER</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="test">
+        <div id="testimonial">
+            <div class="clients">
+                <h4 align="center" style="margin-top: 60px;color: rgb(131, 99, 158);padding-top: 55px;"><img
+                        src="img/star.png" alt="" style="position: relative; top: 15px;">TESTIMONIAL</h4>
+                <h1 align="center" style="font-size: 45px;color: rgb(15, 15, 82);line-height: 22px;">Hear What Our
+                    Clients Say</h1>
+                <p align="center" style="color: grey;font-size: 18px;">Faucibus commodo a aenean et sit quisque ipsum.
+                    Consequat</p>
+                <p align="center" style="color: grey;line-height: 8px;font-size: 18px;">eu id ut dolor felis quis.
+                    Sagittis a sapien pulvinar etiam.
+                </p>
+            </div>
+            <div id="star" style="display: inline-flex;position: relative;top:70px;">
+                <div class="smith">
+                    <p>⭐⭐⭐⭐⭐</p>
+                    <p>Purus ipsum facilisis cursus nunc</p>
+                    <p>egestas vel praesent auctor dolor.</p>
+                    <p>Et proin dolor rhoncus sit.</p>
+                    <hr style="position: relative;top: 35px;">
+                    <div class="boxsm"
+                        style="border: 2px solid red;height: 65px;width: 65px;margin-top: 60px;margin-left: 40px;border-radius: 80px;background-color: rgb(131, 99, 158);border: none;">
+                    </div>
+                    <p
+                        style="font-size: 25px;margin-left: 120px;margin-top: -60px;color:rgb(15, 15, 82);font-weight: bold;">
+                        James Smith</p>
+                    <p style="font-size: 21px;margin-left: 120px;">Office manager</p>
+                </div>
+                <div class="rachel">
+                    <p>⭐⭐⭐⭐⭐</p>
+                    <p>Purus ipsum facilisis cursus nunc</p>
+                    <p>egestas vel praesent auctor dolor.</p>
+                    <p>Et proin dolor rhoncus sit.</p>
+                    <hr style="position: relative;top: 35px;">
+                    <div class="boxsm"
+                        style="border: 2px solid red;height: 65px;width: 65px;margin-top: 60px;margin-left: 40px;border-radius: 80px;background-color: rgb(131, 99, 158);border: none;">
+                    </div>
+                    <p
+                        style="font-size: 25px;margin-left: 120px;margin-top: -60px;color:rgb(15, 15, 82);font-weight: bold;">
+                        Rachel Lee</p>
+                    <p style="font-size: 21px;margin-left: 120px;">Office manager</p>
+                </div>
+                <div class="chen">
+                    <p>⭐⭐⭐⭐⭐</p>
+                    <p>Purus ipsum facilisis cursus nunc</p>
+                    <p>egestas vel praesent auctor dolor.</p>
+                    <p>Et proin dolor rhoncus sit.</p>
+                    <hr style="position: relative;top: 35px;">
+                    <div class="boxsm"
+                        style="border: 2px solid red;height: 65px;width: 65px;margin-top: 60px;margin-left: 40px;border-radius: 80px;background-color: rgb(131, 99, 158);border: none;">
+                    </div>
+                    <p
+                        style="font-size: 25px;margin-left: 120px;margin-top: -60px;color:rgb(15, 15, 82);font-weight: bold;">
+                        Michael Chen</p>
+                    <p style="font-size: 23px;margin-left: 120px;">Office manager</p>
+                </div>
+            </div>
+            <div class="customer" style="position: relative; top: 80px;">
+                <p align="center"
+                    style="color: rgb(15, 15, 82);font-weight: bold;font-size: 30px;position: relative;top: 30px;">
+                    Trusted by 50k+ customers</p>
+                <p align="center" style="color: grey;font-size: 25px;line-height: 90px;">⭐⭐⭐⭐⭐ 4.4/5 . 3,841 Reviews</p>
+            </div>
+        </div>
+    </section>
+
+
+    <footer id="foot" style="margin-top: 250px;background-color:rgb(27,24,80); height: 472px;">
+        <section id="foot1">
+            <div id="beresin">
+                <div class="intro">
+                    <h2 style="margin-left: 120px;font-size: 40px;color:white;position: relative; top: 50px;"><img
+                            src="img/footstar.png" alt="" style="position: relative; top: 20px;">Beresin</h2>
+                    <p style="margin-left: 120px;color: white;margin-top: 70px;font-size: 20px;">Leo elementum iaculis
+                        quam massa vitae</p>
+                    <p style="margin-left: 120px;color: white;margin-top: 3px;font-size: 20px;line-height: 2px;">odio
+                        sed. Morbi tincidunt senectus</p><br>
+                    <img src="img/social.png" style="margin-left: 110px;height: 60px;">
+                </div>
+            </div>
+        </section>
+        <section id="foot2">
+            <div id="navigation">
+                <div class="nav"
+                    style="color: white;margin-left: 570px;margin-top: -220px;font-size: 20px;line-height: 25px;">
+                    <h2>Navigation</h2>
+                    <p>Home</p>
+                    <p>About Us</p>
+                    <p>Our Services</p>
+                    <p>Our Team</p>
+                </div>
+            </div>
+        </section>
+        <section id="foot3">
+            <div id="newser">
+                <div class="ser2"
+                    style="color: white;margin-left: 825px;margin-top: -235px;font-size: 20px;line-height: 25px;">
+                    <h2>Services</h2>
+                    <p>Kitchen Cleaning</p>
+                    <p>Office Cleaning</p>
+                    <p>Carpet Cleaning</p>
+                    <p>House Cleaning</p>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <div id="cont">
+                <div class="contactus"
+                    style="color: white;margin-left: 1060px;margin-top: -235px;font-size: 20px;line-height: 25px;">
+                    <h2>Contact Us</h2>
+                    <p>Our Support and Sales team is available</p>
+                    <p>24/7 to answer your queries</p>
+                    <img src="img/location.png" style="margin-left: -15px; position: relative;top: -16px;">
+                    <p style="margin-left: 34px;margin-top: -55px;">123 Main St,Suite 500,New York,NY 10001</p>
+                    <img src="img/contact.png" style="margin-left: -8px;">
+                    <p style="margin-left: 40px;margin-top: -45px;">+1(333)000-0000</p>
+                </div>
+            </div>
+        </section>
+        <br>
+        <hr style="width: 1330px; margin-left: 120px;color: rgb(131,99,158);">
+        <p style="color: white;margin-top: 40px;margin-left: 120px">COPYRIGHT &copy; 2023 BERESIN | DESIGN BY TOKOTEMA
+        </p>
+        <p style="color: white;margin-left: 1210px;position: relative;top: -40px;">TERM OF USE | PRIVACY POLICY</p>
+    </footer>
+</body>
+
+</html>
